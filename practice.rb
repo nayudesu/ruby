@@ -14,3 +14,10 @@ puts "Hello,#{name}!"
 puts 'ruby' != 'perl'
 # .bytes （配列で表示）
 puts 'abc'.bytes
+# if条件分岐 Rubyの場合 falseとnil以外全て真
+data = find_data
+if data
+  'データがあります'
+else
+  'データがありません'
+end
