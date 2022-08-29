@@ -25,6 +25,14 @@ end
 =end
 # 論理演算子　条件&&条件(かつ) 条件||条件(または)
 t1 = true
-t2 = false
-puts t1&&t2
-puts t1||t2
+f1 = false
+puts t1&&f1
+puts t1||f1
+# !演算子を使うと真偽逆転
+puts !(t1&&f1)
+# メソッド名はスネークケース
+name = "Alice"
+a = <<TEXT
+ようこそ、#{name}さん！
+TEXT
+puts a
