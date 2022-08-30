@@ -40,3 +40,14 @@ puts a
 puts 'Hi!' *10
 # 真偽が確定した時点で評価終了するため　戻り値２
 puts nil || false || 2 || 3
+# or（Aが真か？真でなければBせよ）
+def greet(country)
+  country or return 'countryを入力してください'
+  if country == 'japan'
+    'こんにちは'
+  else
+    'Hello'
+  end 
+end 
+puts greet(nil)
+puts greet('japan')
