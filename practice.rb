@@ -52,6 +52,7 @@ end
 puts greet(nil)
 puts greet('japan')
 # unless文 (unless=ifと反対の意味を持つ)
+status = 'error'
 if status != 'ok'
   '何か異常があります'
 end 
@@ -59,3 +60,16 @@ end
 unless status == 'ok'
   '何か異常があります'
 end 
+
+#case文 (case=複数の値と比較するとき)
+country = 'italy'
+case country
+when 'japan'
+  'こんにちは'
+when 'us'
+  'hello'
+when 'italy'
+  'Ciao'
+else 
+  '???'
+end
