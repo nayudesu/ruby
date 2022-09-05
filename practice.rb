@@ -47,7 +47,15 @@ def greet(country)
     'こんにちは'
   else
     'Hello'
-  end 
-end 
+  end
+end
 puts greet(nil)
 puts greet('japan')
+# unless文 (unless=ifと反対の意味を持つ)
+if status != 'ok'
+  '何か異常があります'
+end 
+
+unless status == 'ok'
+  '何か異常があります'
+end 
