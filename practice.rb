@@ -62,7 +62,7 @@ unless status == 'ok'
 end 
 
 #case文 (case=複数の値と比較するとき)
-country = 'italy'
+puts country = 'italy'
 case country
 when 'japan'
   'こんにちは'
@@ -73,3 +73,11 @@ when 'italy'
 else 
   '???'
 end
+
+# 条件演算子　
+puts n = 11
+if n > 10
+  '10より大きい'
+else
+  '10以下'
+end 
